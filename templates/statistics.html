@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .cont{max-width: 100vw;}
+</style>
+  {% extends "layout.html" %}
+  <section>
+      {% block content %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.css" rel="stylesheet">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.css" rel="stylesheet">
+
+             <div class="cont" style="padding-top: 10vh;">
+                  {{ the_div|safe }}
+
+
+     </div>
+
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.js"></script>
+      {{ the_script|safe }}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  {% endblock %}
+  </section>
+
+</html>
